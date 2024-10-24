@@ -25,7 +25,22 @@ public class Main
         WordChecker z = new WordChecker(secwords);
         System.out.println(z.isWordChain());
 
+        //createlist test
+        WordChecker a = new WordChecker();
+        ArrayList<String> wordList = new ArrayList<String>();
+        wordList.add("catch");
+        wordList.add("bobcat");
+        wordList.add("catchacat");
+        wordList.add("cat");
+        wordList.add("at");
+        System.out.println(wordList);
 
+        WordChecker b = new WordChecker(wordList);
+        System.out.println(b.createList("cat"));
+
+        System.out.println(b.createList("catch"));
+
+        System.out.println(b.createList("dog"));
     }
     
 }
